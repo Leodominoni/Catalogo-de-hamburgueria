@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&display=swap');
 
-:root {
-    --bg-color:  #1C1C26;
-    --color-font: #D96907;
-    --color-button: #590902;
-
-  }
-body{
-    background-color: var(--bg-color);
-    font-family: 'Roboto Slab', serif;
-
+:root{
+  --bs-red: #dc3545;
+    --bs-gray-400: #ced4da;
 }
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity));
+} 
