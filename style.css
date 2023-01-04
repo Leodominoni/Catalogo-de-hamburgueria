@@ -1,10 +1,26 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&display=swap');
-
 :root{
-  --bs-red: #dc3545;
-    --bs-gray-400: #ced4da;
+  --color-titulo: #FFFF;
+  --color-button: #8E1102;
+  --bg-color: #1C1C26;
+  --color-link: #D96907;
 }
-.bg-success {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity));
-} 
+.titulo{
+  font-family: 'Roboto Slab', serif;
+  color: var(--color-titulo);
+}
+.titulo:hover{
+  color: var(--color-link);
+}
+.font-nav{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+.img-carrosel{
+  object-fit: cover; /* preencher sem distorcer */
+  object-position: 0 50%;
+  height: 300px;
+}
+.titulo-carrosel{
+  font-family: 'Roboto Slab', serif;
+  color: var(--color-button);
+}
