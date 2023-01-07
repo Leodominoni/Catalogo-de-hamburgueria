@@ -3,6 +3,7 @@
   --color-button: #8E1102;
   --bg-color: #1C1C26;
   --color-link: #D96907;
+  --color-red: #400101;
 }
 .titulo{
   font-family: 'Roboto Slab', serif;
@@ -23,7 +24,66 @@
   object-fit: cover;
 }
 
-.titulo-carrosel{
+.titulo-carrosel {
   font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+  font-weight: bold;
   color: var(--color-button);
+  text-shadow: var(--color-titulo) 1px 2px 2px;
+}
+.descricao-carrosel{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-red);
+}
+.titulo-principal{
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  color: var(--color-button);
+}
+.txt-principal{
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--bg-color);
+}
+.chapeiro{
+  float: right;
+  height: 100%;
+  width: 60%;
+  object-fit: cover;
+}
+.txt-cardapio{
+  font-size: 20px;
+}
+.card{
+  max-width: 25rem;
+}
+.card-title{
+  color: var(--color-button);
+  font-size: 25px;
+  text-shadow: var(--color-titulo) 1px 2px 2px;
+}
+.card-text{
+  font-family: 'Roboto Slab', serif;
+  color: var(--color-titulo);
+  text-align: center;
+}
+.btn{
+  font-family: 'Roboto Slab', serif;
+}
+.btn-dark:hover{
+  background-color: var(--color-button);
+  color: var(--color-link);
+}
+.btn-color{
+  font-size: 22px;
+  height: 40px;
+  width: 100%;
+  background-color: var(--color-button);
+  color: var(--color-titulo);
+}
+.btn-color:hover{
+  background-color: var(--color-red);
+  color: var(--color-link);
 }

@@ -27,9 +27,9 @@
             <div class="collapse navbar-collapse  justify-content-end " id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active text-light font-nav" aria-current="page" href="index.html">Melhor Hamburguer</a>
-                <a class="nav-link text-light font-nav" href="quemsomos.html">Quem Somos</a>
+                <a class="nav-link text-light font-nav" href="quemsomos">Quem Somos</a>
                 <a class="nav-link text-light font-nav" href="promo.html">Promoções</a>
-                <a class="nav-link text-light font-nav" href="cardapio.html">Cardápio</a>
+                <a class="nav-link text-light font-nav" href="#cardapio">Cardápio</a>
                 <a class="nav-link text-light font-nav" href="pedido.html">Peça AQUI</a>
               </div>
             </div>
@@ -79,6 +79,7 @@
       </div>
     </main>
     <section class="principal">   
+      <a name="quemsomos"></a>
       <h2 class="titulo-principal m-4">Quem Somos</h2>
       <div class="row mx-md-n5">
         <div class="col py-3 px-md-5 border bg-dark">
@@ -96,11 +97,47 @@
       </div>   
       
     </section>
-    <section class="cardapio">
+    <section class="cardapio mx-5">
+      <a name="cardapio"></a>
       <h2 class="titulo-principal m-4">Cardápio</h2>
-      <p class="txt-principal">Escolha o <strong>pão</strong> para seu lanche: </p>
-      
+      <p class="txt-cardapio">Escolha o seu <strong>lanche:</strong></p>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md">
+            <div class="card">
+              <img class="card-img-top" src="img/cardapio1.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Burguer Barbecue</h4>
+                <p class="card-text bg-dark p-1">Hamburguer Bovino 200g, Queijo Cheddar, Bacon e Barbecue</p>
+                <a href="#" class="btn btn-dark">QUERO ESSE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img class="card-img-top" src="img/cardapio2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Burguer Apimentado</h4>
+                <p class="card-text bg-dark p-1">Hamburguer Bovino 200g, Queijo, Tomate, Alface e Molho de Pimenta</p>
+                <a href="#" class="btn btn-dark">QUERO ESSE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img class="card-img-top" src="img/cardapio3.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Burguer Salada</h4>
+                <p class="card-text bg-dark p-1">Hamburguer Bovino 200g, Queijo, Alface e Tomate</p>
+                <a href="#" class="btn btn-dark">QUERO ESSE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="d-block btn-color btn">Mais lanches</button>
     </section>
+    <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
