@@ -15,30 +15,15 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
 }
-.navbar-toggler-icon {
-  background-color: var(--color-titulo);
+.fixedHeightImg > img {
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  object-fit: cover;
 }
-.carousel-inner {
-  object-fit: cover;  
-  object-position: 0 80%;
-}
-.img-carrosel{
-  height: 50%;
-  width: 50%;
-}
+
 .titulo-carrosel{
   font-family: 'Roboto Slab', serif;
   color: var(--color-button);
-  font-size: 55px;
-}
-.descricao-carrosel{
-  font-size: 25px;
-  color: var(--color-titulo);
-}
-.titulo-principal{
-  font-family: 'Roboto Slab', serif;
-  color: var(--color-button);
-}
-.txt-principal{
-  font-family: 'Nunito Sans', sans-serif;
 }
