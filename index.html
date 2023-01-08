@@ -27,13 +27,12 @@
             <div class="collapse navbar-collapse  justify-content-end " id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active text-light font-nav" aria-current="page" href="index.html">Melhor Hamburguer</a>
-                <a class="nav-link text-light font-nav" href="quemsomos">Quem Somos</a>
-                <a class="nav-link text-light font-nav" href="promo.html">Promoções</a>
+                <a class="nav-link text-light font-nav" href="#quemsomos">Quem Somos</a>
+                <a class="nav-link text-light font-nav" href="#promocao">Promoção</a>
                 <a class="nav-link text-light font-nav" href="#cardapio">Cardápio</a>
-                <a class="nav-link text-light font-nav" href="pedido.html">Peça AQUI</a>
+                <a class="nav-link text-light font-nav" data-bs-toggle="modal" data-bs-target="#modal-pedido" href="#">Peça AQUI</a>
               </div>
-            </div>
-          
+            </div>          
         </nav>
       </header>
       <main>
@@ -103,7 +102,7 @@
       <p class="txt-cardapio">Escolha o seu <strong>lanche:</strong></p>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-md">
+          <div class="col-12 col-md-4">
             <div class="card">
               <img class="card-img-top" src="img/cardapio1.jpg" alt="Card image">
               <div class="card-img-overlay">
@@ -113,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-12 col-md-4">
             <div class="card">
               <img class="card-img-top" src="img/cardapio2.jpg" alt="Card image">
               <div class="card-img-overlay">
@@ -123,7 +122,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-12 col-md-4">
             <div class="card">
               <img class="card-img-top" src="img/cardapio3.jpg" alt="Card image">
               <div class="card-img-overlay">
@@ -133,11 +132,81 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/cardapio00.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Burguer Vegan</h4>
+                <p class="card-text bg-dark p-1">Hamburguer de beringela, Pepino, Tomate, Molho de Cogumelos</p>
+                <a href="#" class="btn btn-dark">QUERO ESSE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/cardapio4.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Burguer Ovo</h4>
+                <p class="card-text bg-dark p-1">Hamburguer de beringela, Ovo,Tomate Seco com Manjericão</p>
+                <a href="#" class="btn btn-dark">QUERO ESSE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/cardapio5.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Burguer do Chef</h4>
+                <p class="card-text bg-dark p-1">Hamburguer Bovino, Cebola Roxa, Queijo Tomate, Molho da Casa</p>
+                <a href="#" class="btn btn-dark">QUERO ESSE</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button type="button" class="d-block btn-color btn">Mais lanches</button>
+      <a href="#" class="d-block mt-2 btn-color btn">Mais lanches</a>
     </section>
-    <footer></footer>
+
+    <article class="promocao row d-flex justify-content-center">
+      <a name="promocao"></a><h2 class="titulo-principal m-4">Promoção</h2>
+      <img class="img-promo" src="img/promo.png">
+    </article>
+
+    <footer class="text-center text-bg-dark p-2 mt-2">  
+      <p>Desenvolvido por <strong>Leonor Dominoni</strong></p>
+    </footer>
+   
+    <!-- Contato - Modal -->
+  <div class="modal fade" id="modal-pedido" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Entre em contato</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+          <main class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome: </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome Completo">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email: </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite sua mensagem" rows="3"></textarea>
+              </div>
+            </form>
+          </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>

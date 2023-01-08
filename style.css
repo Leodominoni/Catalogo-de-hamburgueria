@@ -57,7 +57,7 @@
   font-size: 20px;
 }
 .card{
-  max-width: 25rem;
+  width:400px;
 }
 .card-title{
   color: var(--color-button);
@@ -86,4 +86,11 @@
 .btn-color:hover{
   background-color: var(--color-red);
   color: var(--color-link);
+}
+.botao-cor-especial{
+  background-color: var(--color-red);
+  color: var(--color-link);
+}
+.img-promo{
+  max-width: 400px;
 }
